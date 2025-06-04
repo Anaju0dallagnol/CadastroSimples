@@ -20,7 +20,7 @@ export default function VisualizarUsuarios() {
 
                 <Alert
 
-                    severity="info"
+                    severity="success"
                     sx={{
                         textAlign: "center",
                         display: "flex",
