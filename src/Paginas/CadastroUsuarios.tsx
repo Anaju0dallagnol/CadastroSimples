@@ -4,8 +4,8 @@ import { Box, Button, TextField } from "@mui/material";
 export default function FormPageFunction() {
     const [dados, setDados] = useState([]);
     const [novoUsuario, setNovoUsuario] = useState({
-        name: "",
-        email: "",
+        name: "Exemplo",
+        email: "Exemplo@gmail.com",
     });
 
     // Carrega dados do localStorage ao iniciar
