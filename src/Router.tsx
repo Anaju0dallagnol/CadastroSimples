@@ -1,20 +1,16 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import App from './App'
-import CadastroUsuario from './Paginas/CadastroUsuarios'
+// src/Router.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import FormPageFunction from "./CadastroUsuarios";
 
 
 
-export function ExportaRouter() {
+export function AppRouter() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/form" element={<CadastroUsuario />} />
-
-
-
-        <Route path="*" element={<h2 color='black'>404 Página não encontrada</h2>} />
+        <Route path="/" element={<CadastroUsuarios />} />
+        <Route path="/usuarios" element={<ListaUsuarios />} />
       </Routes>
-    </Router>
-  )
+    </BrowserRouter>
+  );
 }
